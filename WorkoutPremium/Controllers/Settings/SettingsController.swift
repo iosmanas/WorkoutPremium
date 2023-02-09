@@ -1,19 +1,22 @@
 //
-//  ViewController.swift
-//  WorkoutPremium
+//  SettingsController.swift
+//  WorkoutApp
 //
-//  Created by new on 9/2/23.
+//  Created by new on 8/2/23.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        title = "Settings"
     }
 
 
 }
+
 
