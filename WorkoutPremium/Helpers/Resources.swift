@@ -17,7 +17,6 @@ enum Resources {
         static var titleGray = UIColor(hexString: "#545C77")
         
         static var secondary = UIColor(hexString: "#F0F3FF")
-//        
     }
     
     enum Strings{
@@ -56,6 +55,7 @@ enum Resources {
     }
     
     enum Images{
+        
         enum TabBar{
             static var overview = UIImage(named: "overview_tab")
             static var session = UIImage(named: "session_tab")
@@ -74,5 +74,4 @@ enum Resources {
             UIFont(name: "Helvetica", size: size) ?? UIFont()
         }
     }
-    
 }

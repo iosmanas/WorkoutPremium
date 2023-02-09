@@ -10,6 +10,9 @@
 		D51CFA7B2994F3F800D3B319 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CFA7A2994F3F800D3B319 /* SecondaryButton.swift */; };
 		D51CFA7D299505E600D3B319 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CFA7C299505E600D3B319 /* OverviewNavBar.swift */; };
 		D51CFA7F2995062300D3B319 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CFA7E2995062300D3B319 /* BaseView.swift */; };
+		D51CFA8229956C9F00D3B319 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CFA8129956C9F00D3B319 /* WeekView.swift */; };
+		D51CFA8429956F9A00D3B319 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CFA8329956F9A00D3B319 /* WeekDayView.swift */; };
+		D51CFA86299576CB00D3B319 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CFA85299576CB00D3B319 /* Date + ext.swift */; };
 		D56FB37E2994ECCE00488AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56FB37D2994ECCE00488AFF /* AppDelegate.swift */; };
 		D56FB3802994ECCE00488AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56FB37F2994ECCE00488AFF /* SceneDelegate.swift */; };
 		D56FB3872994ECCF00488AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56FB3862994ECCF00488AFF /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 		D51CFA7A2994F3F800D3B319 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		D51CFA7C299505E600D3B319 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		D51CFA7E2995062300D3B319 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D51CFA8129956C9F00D3B319 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		D51CFA8329956F9A00D3B319 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		D51CFA85299576CB00D3B319 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		D56FB37A2994ECCE00488AFF /* WorkoutPremium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutPremium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56FB37D2994ECCE00488AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D56FB37F2994ECCE00488AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +68,20 @@
 		D51CFA792994F3DD00D3B319 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D51CFA8029956C8600D3B319 /* WeekView */,
 				D51CFA7A2994F3F800D3B319 /* SecondaryButton.swift */,
 				D51CFA7C299505E600D3B319 /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D51CFA8029956C8600D3B319 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				D51CFA8129956C9F00D3B319 /* WeekView.swift */,
+				D51CFA8329956F9A00D3B319 /* WeekDayView.swift */,
+			);
+			path = WeekView;
 			sourceTree = "<group>";
 		};
 		D56FB3712994ECCE00488AFF = {
@@ -128,6 +144,7 @@
 			children = (
 				D56FB3952994EECC00488AFF /* UIColor + ext .swift */,
 				D56FB3962994EECC00488AFF /* UIView + ext.swift */,
+				D51CFA85299576CB00D3B319 /* Date + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51CFA8229956C9F00D3B319 /* WeekView.swift in Sources */,
+				D51CFA86299576CB00D3B319 /* Date + ext.swift in Sources */,
 				D56FB3A82994EEE500488AFF /* SettingsController.swift in Sources */,
 				D56FB3AB2994EEE500488AFF /* BaseController.swift in Sources */,
 				D51CFA7D299505E600D3B319 /* OverviewNavBar.swift in Sources */,
@@ -271,6 +290,7 @@
 				D56FB39A2994EECC00488AFF /* Resources.swift in Sources */,
 				D56FB3AA2994EEE500488AFF /* OverViewController.swift in Sources */,
 				D51CFA7F2995062300D3B319 /* BaseView.swift in Sources */,
+				D51CFA8429956F9A00D3B319 /* WeekDayView.swift in Sources */,
 				D56FB3AE2994EEE500488AFF /* SessionController.swift in Sources */,
 				D56FB3802994ECCE00488AFF /* SceneDelegate.swift in Sources */,
 			);

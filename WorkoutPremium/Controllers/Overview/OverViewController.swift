@@ -9,15 +9,12 @@ import UIKit
 
 class OverviewController: BaseController {
 
-    
     private let navBar = OverviewNavBar()
 //    private let allWorkoutsButton = SecondaryButton()
     
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //    }
-
-
 }
 
 
@@ -38,8 +35,6 @@ extension OverviewController {
             navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor)
            
-            
-            
 //            allWorkoutsButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
 //            allWorkoutsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 //            allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
@@ -50,12 +45,8 @@ extension OverviewController {
     override func configure() {
         super.configure()
         
-        
         navigationController?.navigationBar.isHidden = true
         navBar.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-
     }
 } 
 

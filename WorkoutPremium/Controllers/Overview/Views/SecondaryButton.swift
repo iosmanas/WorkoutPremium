@@ -14,8 +14,7 @@ final class SecondaryButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        
+
         addViews()
         layoutViews()
         configure()
@@ -30,13 +29,11 @@ final class SecondaryButton: UIButton {
     }
 }
 
-
 private extension SecondaryButton {
     func addViews() {
         addView(label)
         addView(iconView)
     }
-    
     func layoutViews() {
         NSLayoutConstraint.activate([
             iconView.centerYAnchor.constraint(equalTo: centerYAnchor),

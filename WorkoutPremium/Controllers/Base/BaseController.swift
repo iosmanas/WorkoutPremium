@@ -12,7 +12,6 @@ enum NavBarPosition {
     case right
 }
 
-
 class BaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +21,6 @@ class BaseController: UIViewController {
         configure()
     }
 }
-
 
 @objc extension BaseController {
     func addViews() {
@@ -45,8 +43,6 @@ class BaseController: UIViewController {
         print("NavBar Right button tapped")
     }
 }
-
-
 
 extension BaseController {
     func addNavBarButton(at position: NavBarPosition, with title: String) {
