@@ -14,7 +14,7 @@ class ProgressController: BaseController {
         // Do any additional setup after loading the view.
         
         title = "Workout Progress"
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.progress
+        navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .progress)
         
         addNavBarButton(at: .left, with: "Export")
         addNavBarButton(at: .right, with: "Details")

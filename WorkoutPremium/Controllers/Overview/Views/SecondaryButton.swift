@@ -15,9 +15,9 @@ final class SecondaryButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        addViews()
-        layoutViews()
-        configure()
+        setupViews()
+        constaintViews()
+        configureAppearance()
     }
     
     required init?(coder: NSCoder) {
@@ -30,11 +30,11 @@ final class SecondaryButton: UIButton {
 }
 
 private extension SecondaryButton {
-    func addViews() {
-        addView(label)
-        addView(iconView)
+    func setupViews() {
+        setupView(label)
+        setupView(iconView)
     }
-    func layoutViews() {
+    func constaintViews() {
         NSLayoutConstraint.activate([
             iconView.centerYAnchor.constraint(equalTo: centerYAnchor),
             iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
@@ -47,19 +47,19 @@ private extension SecondaryButton {
         ])
     }
     
-    func configure() {
-        backgroundColor = Resources.Colors.secondary
+    func configureAppearance() {
+        backgroundColor = R.Colors.secondary
         layer.cornerRadius = 14
         makeSystem(self)
         
 //        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = Resources.Colors.active
+        label.textColor = R.Colors.active
         label.textAlignment = .center
-        label.font = Resources.Fonts.helveticaRegular(with: 15)
+        label.font = R.Fonts.helveticaRegular(with: 15)
         
         
 //        iconView.translatesAutoresizingMaskIntoConstraints = false
-        iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate )
-        iconView.tintColor = Resources.Colors.active
+        iconView.image = R.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate )
+        iconView.tintColor = R.Colors.active
     }
 }
