@@ -71,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				D51CFA8029956C8600D3B319 /* WeekView */,
-				D51CFA7A2994F3F800D3B319 /* SecondaryButton.swift */,
 				D51CFA7C299505E600D3B319 /* OverviewNavBar.swift */,
 				D56A670F299AE9C700863137 /* BaseInfoView.swift */,
 			);
@@ -192,6 +191,7 @@
 		D56FB3A22994EEE500488AFF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D51CFA7A2994F3F800D3B319 /* SecondaryButton.swift */,
 				D56FB3A32994EEE500488AFF /* BaseController.swift */,
 				D56FB3A42994EEE500488AFF /* NavBarController.swift */,
 				D56FB3A52994EEE500488AFF /* TabBarController.swift */,
